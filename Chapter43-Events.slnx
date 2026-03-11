@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="CodingPractice\CodingPractice.csproj" />
+  <Project Path="ChatRoom\ChatRoom.csproj" />
+  <Project Path="EventManager\EventManager.csproj" />
+  <Project Path="InventoryWatcher\InventoryWatcher.csproj" />
+</Solution>
