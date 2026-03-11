@@ -113,7 +113,18 @@ class CodPrac
     }
     static void Prac_7() 
     {
-    
+        Car car = new Car(50);
+        Dashboard dashboard = new Dashboard();
+
+        dashboard.Subscribe(car);
+        for (int i = 0; i < 7; i++)
+        {
+            car.Drive();
+            Console.WriteLine();
+        }
+
+        dashboard.Unsubscribe(car);
+
     }
     static void Prac_8() 
     {
