@@ -9,7 +9,8 @@
 
 ## 1. 대리자 복습
 
-반환값과 매개변수가 없는 대리자 `Notify`를 선언하고, `SayHello`와 `SayGoodbye` 두 메서드를 등록한 후 호출하세요.
+반환값과 매개변수가 없는 대리자 `Notify`를 선언하고, 
+`SayHello`와 `SayGoodbye` 두 메서드를 등록한 후 호출하세요.
 
 - `SayHello()`: "안녕하세요!" 출력
 - `SayGoodbye()`: "안녕히 가세요!" 출력
@@ -43,7 +44,9 @@
 
 ## 3. 이벤트 구독
 
-`Player` 클래스에 `Action<int>` 타입의 `DamageTaken` 이벤트를 선언하고, `HealthBar`와 `SoundManager`가 구독하도록 구현하세요.
+`Player` 클래스에 `Action<int>` 타입의 
+`DamageTaken` 이벤트를 선언하고, `HealthBar`와 
+`SoundManager`가 구독하도록 구현하세요.
 
 - `Player`: 체력 100, `TakeDamage(int damage)` 메서드에서 이벤트 발생
 - `HealthBar`: 체력바 업데이트 메시지 출력
@@ -62,7 +65,8 @@
 
 ## 4. 이벤트 해제
 
-`Timer` 클래스에 `Action` 타입의 `Tick` 이벤트를 선언하고, `Logger`가 구독/해제하는 것을 구현하세요.
+`Timer` 클래스에 `Action` 타입의 `Tick` 이벤트를 선언하고,
+`Logger`가 구독/해제하는 것을 구현하세요.
 
 - `Timer`: `Start()` 메서드에서 3회 반복하며 `Tick` 이벤트 발생
 - `Logger`: 틱 기록 메시지 출력
@@ -89,10 +93,13 @@
 
 ## 5. 람다식 이벤트 핸들러
 
-`Sensor` 클래스에 `Action<string>` 타입의 `Alert` 이벤트를 선언하고, 람다식으로 이벤트를 구독하세요.
+`Sensor` 클래스에 `Action<string>` 타입의 `Alert` 이벤트를 선언하고, 
+람다식으로 이벤트를 구독하세요.
 
-- `Sensor`: `Detect(string message)` 메서드에서 감지 메시지 출력 후 이벤트 발생
-- 람다식으로 경보 메시지와 로그 메시지를 출력하는 두 핸들러 등록
+- `Sensor`: `Detect(string message)` 메서드에서 
+- 감지 메시지 출력 후 이벤트 발생
+- 람다식으로 경보 메시지와 로그 메시지를 출력하는 
+- 두 핸들러 등록
 - `Detect("움직임 감지됨")`과 `Detect("온도 상승")` 호출
 
 **실행 결과**
@@ -110,7 +117,8 @@
 
 ## 6. Action 대리자 활용
 
-`GameCharacter` 클래스에 `Action`, `Action<int>`, `Action<int, string>` 타입의 이벤트를 선언하고 활용하세요.
+`GameCharacter` 클래스에 `Action`, `Action<int>`, 
+`Action<int, string>` 타입의 이벤트를 선언하고 활용하세요.
 
 - `OnDeath`: 매개변수 없는 사망 이벤트
 - `OnDamaged`: 남은 체력을 전달하는 이벤트
