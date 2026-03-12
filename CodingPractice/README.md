@@ -168,9 +168,11 @@
 
 ## 8. 실전 예제 - 연료 경고 시스템
 
-`Car` 클래스에 연료 관련 이벤트를 선언하고, `Dashboard`가 구독하여 연료 상태를 표시하는 시스템을 구현하세요.
+`Car` 클래스에 연료 관련 이벤트를 선언하고,
+`Dashboard`가 구독하여 연료 상태를 표시하는 시스템을 구현하세요.
 
-- `Car`: `FuelLow` (EventHandler\<FuelEventArgs\>), `FuelChanged` (Action\<int\>) 이벤트
+- `Car`: `FuelLow` (EventHandler\<FuelEventArgs\>), 
+- `FuelChanged` (Action\<int\>) 이벤트
 - `Dashboard`: 연료 게이지 표시 및 경고 메시지 출력
 - 초기 연료 50%에서 7번 운전 시뮬레이션
 
